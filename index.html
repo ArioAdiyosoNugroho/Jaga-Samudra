@@ -9,14 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<script>
-// window.addEventListener('scroll', function() {
-//     const parallaxBg = document.querySelector('.parallax-bg');
-//     let scrollPosition = window.pageYOffset;
-//     parallaxBg.style.transform = 'translateY(' + scrollPosition * 0.3 + 'px)';
-// });
-</script>
-<body>
+<body class="light-mode">
     <div class="preloader">
         <div class="wave-wrapper">
             <div class="wave wave-1"></div>
@@ -26,7 +19,20 @@
         </div>
     </div>
 
-    <header class="parallax-header">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-label">
+            <span class="theme-icons">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </span>
+            <span class="theme-ball"></span>
+        </label>
+    </div>
+
+    <header class="hero-section">
+        <div class="hero-bg"></div>
         <!-- <div class="particles" id="particles-js"></div> -->
         <nav>
             <div class="logo">
@@ -50,32 +56,44 @@
             </div>
         </nav>
         <div class="hero-content">
-            <h1 class="animate__animated animate__fadeInDown">Selamatkan Keindahan Bawah Laut Kita</h1>
-            <p class="animate__animated animate__fadeInUp animate__delay-1s">Bergabunglah dalam upaya melindungi terumbu karang dan biota laut untuk generasi mendatang</p>
-            <div class="hero-buttons animate__animated animate__fadeIn animate__delay-2s">
-                <a href="#action" class="cta-button pulse">Ambil Aksi Sekarang</a>
-                <a href="#video" class="video-button">
-                    <i class="fas fa-play"></i> Tonton Video Kami
-                </a>
+            <div class="hero-text">
+                <h1 class="animate__animated animate__fadeInDown">Selamatkan Kehidupan Laut Kita</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Bergabung dalam misi melindungi terumbu karang dan ekosistem laut untuk masa depan yang berkelanjutan</p>
+                <div class="hero-buttons animate__animated animate__fadeIn animate__delay-2s">
+                    <a href="#action" class="cta-button pulse">Mulai Berkontribusi</a>
+                    <a href="#video" class="video-button">
+                        <i class="fas fa-play"></i> Jelajahi Dunia Bawah Laut
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="27">0</div>
+                    <div class="stat-label">Proyek Aktif</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="1200">0</div>
+                    <div class="stat-label">Relawan</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="45">0</div>
+                    <div class="stat-label">Lokasi</div>
+                </div>
             </div>
         </div>
         <div class="scroll-down animate__animated animate__bounce animate__infinite">
             <span></span>
         </div>
-        <div class="water-wave">
-          <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path class="wave-path wave-one" 
-                  d="M0,60 C150,120 300,0 450,60 C600,120 750,0 900,60 C1050,120 1200,60 1200,60 L1200,120 L0,120 Z" 
-                  fill="#1a355c"/>
-            <path class="wave-path wave-two" 
-                  d="M0,80 C150,140 300,20 450,80 C600,140 750,20 900,80 C1050,140 1200,80 1200,80 L1200,120 L0,120 Z" 
-                  fill="#256fa1" opacity="0.7"/>
-            <path class="wave-path wave-three" 
-                  d="M0,100 C150,160 300,40 450,100 C600,160 750,40 900,100 C1050,160 1200,100 1200,100 L1200,120 L0,120 Z" 
-                  fill="#5d9cb5" opacity="0.5"/>
-          </svg>
-        </div>
-
+            <div class="water-wave">
+              <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path class="wave-path wave-one" 
+                      d="M0,60 C150,120 300,0 450,60 C600,120 750,0 900,60 C1050,120 1200,60 1200,60 L1200,120 L0,120 Z"/>
+                <path class="wave-path wave-two" 
+                      d="M0,80 C150,140 300,20 450,80 C600,140 750,20 900,80 C1050,140 1200,80 1200,80 L1200,120 L0,120 Z"/>
+                <path class="wave-path wave-three" 
+                      d="M0,100 C150,160 300,40 450,100 C600,160 750,40 900,100 C1050,160 1200,100 1200,100 L1200,120 L0,120 Z"/>
+              </svg>
+            </div>
     </header>
 
     <section id="about" class="about-section">
