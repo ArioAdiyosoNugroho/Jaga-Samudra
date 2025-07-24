@@ -1345,6 +1345,29 @@ nav.scrolled {
   color: var(--text-color);
   transition: var(--transition);
 }
+.wheel-item:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.wheel-item:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.7; }
+  70% { transform: scale(1.3); opacity: 0; }
+  100% { transform: scale(0.8); opacity: 0; }
+}
+
+
 
 /* Posisi item */
 .item1 {
@@ -1412,6 +1435,7 @@ nav.scrolled {
   padding: 100px 0;
   background: var(--card-bg);
   position: relative;
+  margin-top: 4rem;
   transition: var(--transition);
 }
 
@@ -1780,7 +1804,7 @@ nav.scrolled {
 .gallery-section {
   padding: 100px 0;
   background: var(--background-color);
-  position: relative;
+  position: relative; 
   transition: var(--transition);
 }
 
@@ -1872,6 +1896,7 @@ nav.scrolled {
 
 .gallery-item:hover .overlay-content {
   transform: translateY(0);
+  color: var(--wave-dark);
 }
 
 .overlay-content h3 {
@@ -1890,12 +1915,13 @@ nav.scrolled {
   display: inline-flex;
   width: 40px;
   height: 40px;
-  background: var(--white);
+  background: var(--primary-color);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--white);
   transition: var(--transition);
+  z-index: 10;
 }
 
 .gallery-expand:hover {

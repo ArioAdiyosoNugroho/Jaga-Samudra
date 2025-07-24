@@ -447,6 +447,9 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", updateParallax);
   };
 
+    //   ======tambahan========
+  
+
   // ========== Initialize All Functions ==========
   initPreloader();
   initThemeToggle();

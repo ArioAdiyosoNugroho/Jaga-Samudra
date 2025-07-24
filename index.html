@@ -339,53 +339,59 @@
                 </div>
             </div>
             
-            <div class="biodiversity-wheel">
-                <h3>Interaksi Ekosistem Terumbu Karang</h3>
-                <div class="wheel-container">
-                    <div class="wheel-center">
-                        <img src="images/coral-wheel.png" alt="Terumbu Karang">
-                    </div>
-                    <div class="wheel-item item1">
-                        <div class="wheel-icon">
-                            <i class="fas fa-fish"></i>
-                        </div>
-                        <div class="wheel-text">Ikan Karang</div>
-                    </div>
-                    <div class="wheel-item item2">
-                        <div class="wheel-icon">
-                            <i class="fas fa-turtle"></i>
-                        </div>
-                        <div class="wheel-text">Penyu</div>
-                    </div>
-                    <div class="wheel-item item3">
-                        <div class="wheel-icon">
-                            <i class="fas fa-shrimp"></i>
-                        </div>
-                        <div class="wheel-text">Invertebrata</div>
-                    </div>
-                    <div class="wheel-item item4">
-                        <div class="wheel-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <div class="wheel-text">Lamun</div>
-                    </div>
-                    <div class="wheel-item item5">
-                        <div class="wheel-icon">
-                            <i class="fas fa-tree"></i>
-                        </div>
-                        <div class="wheel-text">Mangrove</div>
-                    </div>
-                    <div class="wheel-item item6">
-                        <div class="wheel-icon">
-                            <i class="fas fa-water"></i>
-                        </div>
-                        <div class="wheel-text">Plankton</div>
-                    </div>
-                    <div class="wheel-connections"></div>
-                </div>
-            </div>
+<div class="biodiversity-wheel">
+    <h3>Interaksi Ekosistem Terumbu Karang</h3>
+    <div class="wheel-container">
+        <div class="wheel-center">
+            <img src="images/coral-wheel.png" alt="Terumbu Karang" class="coral-rotate">
         </div>
-    </section>
+        
+        <!-- Wheel Items - Perfectly Positioned -->
+        <div class="wheel-item item1" style="--angle: 0deg">
+            <div class="wheel-icon">
+                <i class="fas fa-fish"></i>
+            </div>
+            <div class="wheel-text">Ikan Karang</div>
+        </div>
+        
+        <div class="wheel-item item2" style="--angle: 60deg">
+            <div class="wheel-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="wheel-text">Penyu</div>
+        </div>
+        
+        <div class="wheel-item item3" style="--angle: 120deg">
+            <div class="wheel-icon">
+                <i class="fas fa-shrimp"></i>
+            </div>
+            <div class="wheel-text">Invertebrata</div>
+        </div>
+        
+        <div class="wheel-item item4" style="--angle: 180deg">
+            <div class="wheel-icon">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <div class="wheel-text">Lamun</div>
+        </div>
+        
+        <div class="wheel-item item5" style="--angle: 240deg">
+            <div class="wheel-icon">
+                <i class="fas fa-tree"></i>
+            </div>
+            <div class="wheel-text">Mangrove</div>
+        </div>
+        
+        <div class="wheel-item item6" style="--angle: 300deg">
+            <div class="wheel-icon">
+                <i class="fas fa-water"></i>
+            </div>
+            <div class="wheel-text">Plankton</div>
+        </div>
+        
+        <div class="wheel-connections"></div>
+    </div>
+</div>
 
     <section id="solutions" class="solutions-section">
         <div class="container">
@@ -591,7 +597,7 @@
                 
                 <div class="research-card">
                     <div class="research-image">
-                        <img src="images/research3.jpg" alt="Restorasi 3D">
+                        <img src="images/research3.jpeg" alt="Restorasi 3D">
                         <div class="research-badge">
                             <i class="fas fa-print"></i>
                         </div>
@@ -700,12 +706,12 @@
                 </div>
                 
                 <div class="gallery-item" data-category="coral">
-                    <img src="images/gallery5.jpg" alt="Terumbu Karang 2">
+                    <img src="images/gallery5.jpeg" alt="Terumbu Karang 2">
                     <div class="gallery-overlay">
                         <div class="overlay-content">
                             <h3>Karang Otak</h3>
                             <p>Wakatobi, Sulawesi</p>
-                            <a href="images/gallery5.jpg" class="gallery-expand" data-lightbox="gallery">
+                            <a href="images/gallery5.jpeg" class="gallery-expand" data-lightbox="gallery">
                                 <i class="fas fa-expand"></i>
                             </a>
                         </div>
@@ -713,12 +719,12 @@
                 </div>
                 
                 <div class="gallery-item" data-category="fish">
-                    <img src="images/gallery6.jpg" alt="Ikan Napoleon">
+                    <img src="images/gallery6.jpeg" alt="Ikan Napoleon">
                     <div class="gallery-overlay">
                         <div class="overlay-content">
                             <h3>Ikan Napoleon</h3>
                             <p>Banda Neira, Maluku</p>
-                            <a href="images/gallery6.jpg" class="gallery-expand" data-lightbox="gallery">
+                            <a href="images/gallery6.jpeg" class="gallery-expand" data-lightbox="gallery">
                                 <i class="fas fa-expand"></i>
                             </a>
                         </div>
@@ -739,12 +745,12 @@
                 </div>
                 
                 <div class="gallery-item" data-category="turtle">
-                    <img src="images/gallery8.jpg" alt="Penyu Sisik">
+                    <img src="images/gallery8.jpeg" alt="Penyu Sisik">
                     <div class="gallery-overlay">
                         <div class="overlay-content">
                             <h3>Penyu Sisik</h3>
                             <p>Karimunjawa, Jawa</p>
-                            <a href="images/gallery8.jpg" class="gallery-expand" data-lightbox="gallery">
+                            <a href="images/gallery8.jpeg" class="gallery-expand" data-lightbox="gallery">
                                 <i class="fas fa-expand"></i>
                             </a>
                         </div>
